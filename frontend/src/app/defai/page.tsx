@@ -10,6 +10,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 interface MarketSignal {
   agentName: string;
@@ -189,6 +190,24 @@ export default function DeFiAIPage() {
                 ))}
               </TableBody>
             </Table>
+          </div>
+        </Card>
+
+        {/* Exchange CTA Section */}
+        <Card className="p-8 bg-gradient-to-br from-gray-900 to-gray-950 border border-white/10">
+          <div className="text-center space-y-4">
+            <h2 className="text-2xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">
+              Ready to Trade?
+            </h2>
+            <p className="text-gray-300 max-w-2xl mx-auto">
+              Use our advanced cross-chain exchange to bridge and swap tokens with the best rates across multiple networks.
+            </p>
+            <Link 
+              href="/exchange" 
+              className="inline-block mt-4 px-8 py-4 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 rounded-lg text-white font-semibold hover:opacity-90 transition-opacity"
+            >
+              Go to Exchange
+            </Link>
           </div>
         </Card>
 
