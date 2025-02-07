@@ -19,12 +19,11 @@ Sentifolio leverages Cookie DataSwarm APIs in three key ways:
 
 ## GitHub Repository
 
-🔗 [Repository](https://github.com/your-username/sentifolio)
+🔗 [Repository](https://github.com/aeither/sentifolio)
 
 ### Key Components:
-- `api/`: Backend logic for API data fetching and sentiment analysis of AI agents tokens.
-- `contracts/`: Avalanche and Arbitrum-compatible smart contracts.
 - `frontend/`: React dashboard for metrics and actions across both chains.
+- `frontend/src/api/`: Backend logic for API data fetching and sentiment analysis of AI agents tokens.
 
 ## Deployment
 
@@ -39,6 +38,18 @@ echo "COOKIE_FUN_API_KEY=your_key_here" > .env
 echo "GROQ_API_KEY=your_key_here" > .env
 bun run dev
 ```
+
+### Vercel Deployment:
+
+1. Fork the repository on GitHub.
+2. Connect your forked repository to Vercel.
+3. In the Vercel deployment settings:
+   - Set the Root Directory to `frontend`
+   - Select Next.js as the Framework Preset
+4. Add the following environment variables:
+   - `COOKIE_FUN_API_KEY`
+   - `GROQ_API_KEY`
+5. Deploy the project.
 
 ## Technical Overview
 
