@@ -33,10 +33,11 @@ Sentifolio leverages Cookie DataSwarm APIs in three key ways:
 ### Local Setup:
 
 ```bash
-git clone https://github.com/your-username/sentifolio
-cd sentifolio && npm install
+git clone https://github.com/aeither/sentifolio
+cd frontend && bun install
 echo "COOKIE_FUN_API_KEY=your_key_here" > .env
-npm run dev
+echo "GROQ_API_KEY=your_key_here" > .env
+bun run dev
 ```
 
 ## Technical Overview
